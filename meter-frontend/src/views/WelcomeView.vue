@@ -14,7 +14,7 @@
       <div style="margin-top: 10px">远传抄表，在线查询，一站式服务</div>
     </div>
     <div class="right-card">
-
+      <router-view/>
     </div>
 
   </div>
@@ -25,7 +25,7 @@
 .welcome-title{
   position: absolute;
   bottom: 300px;
-  left: 300px;
+  left: 200px;
   color: yellow;
   text-shadow: 0 0 10px black;
 }
