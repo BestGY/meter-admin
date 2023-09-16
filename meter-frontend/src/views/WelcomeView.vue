@@ -14,7 +14,11 @@
       <div style="margin-top: 10px">远传抄表，在线查询，一站式服务</div>
     </div>
     <div class="right-card">
-      <router-view/>
+      <router-view v-slot="{ Component }">
+        <transition name="el-fade-in-linear"  mode="out-in">
+          <component :is="Component"/>
+        </transition>
+      </router-view>
     </div>
 
   </div>

@@ -47,7 +47,7 @@ function userLogin(){
           </el-input>
         </el-form-item>
         <el-form-item prop="password">
-          <el-input v-model="form.password" type="password" maxlength="30" placeholder="密码">
+          <el-input v-model="form.password" type="password" maxlength="20" placeholder="密码">
             <template #prefix>
               <el-icon><Lock /></el-icon>
             </template>
@@ -60,7 +60,7 @@ function userLogin(){
             </el-form-item>
           </el-col>
           <el-col :span="12" style="text-align: right">
-            <el-link>忘记密码？</el-link>
+            <el-link @click="router.push('/reset')">忘记密码？</el-link>
           </el-col>
         </el-row>
       </el-form>
@@ -72,7 +72,7 @@ function userLogin(){
       <span style="font-size: 13px;color: grey">没有账号</span>
     </el-divider>
     <div>
-      <el-button style="width: 280px" type="warning" plain>立即注册</el-button>
+      <el-button @click="router.push('/register')" style="width: 280px" type="warning" plain>立即注册</el-button>
     </div>
   </div>
 

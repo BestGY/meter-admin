@@ -83,7 +83,7 @@ function get(url, success, failure = defaultFailure) {
 
 //封装外部使用post
 function post(url, data, success, failure = defaultFailure) {
-    internalGet(url, data, accessHeader(), success, failure)
+    internalPost(url, data, accessHeader(), success, failure)
 }
 
 
